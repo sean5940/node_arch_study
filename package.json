@@ -30,10 +30,14 @@
     "event-dispatch": "^0.4.1",
     "express": "^4.17.1",
     "mongoose": "^5.12.11",
+    "nodemon": "^2.0.7",
     "reflect-metadata": "^0.1.13",
     "typedi": "^0.10.0",
+    "typescript": "^4.2.4",
     "url-metadata": "^2.5.0",
     "winston": "^3.3.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "ts-node": "^10.0.0"
+  }
 }
