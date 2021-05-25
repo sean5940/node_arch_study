@@ -23,7 +23,7 @@ const Metadata = new mongoose.Schema(
         delete ret.createdAt;
         delete ret.updatedAt;
       }
-    }, timestamps: { updatedAt: "date" }
+    }, timestamps: { updatedAt: 'date' }
   },
 );
 
