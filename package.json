@@ -1,0 +1,39 @@
+{
+  "name": "node_arch_study",
+  "version": "1.0.0",
+  "description": "node_server_study",
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "tsc",
+    "heroku-postbuild": "npm run build",
+    "start": "nodemon",
+    "inspect": "nodemon --inspect src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SungilJung/node_arch_study.git"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "express"
+  ],
+  "author": "green5940",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SungilJung/node_arch_study/issues"
+  },
+  "homepage": "https://github.com/SungilJung/node_arch_study#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "event-dispatch": "^0.4.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.11",
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.10.0",
+    "url-metadata": "^2.5.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {}
+}
