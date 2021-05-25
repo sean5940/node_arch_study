@@ -1,7 +1,5 @@
 import { Container } from 'typedi';
-import formData from 'form-data';
 import LoggerInstance from './logger';
-import config from '../config';
 
 export default ({ mongoConnection, models }: { mongoConnection; models: { name: string; model: any }[] }) => {
   try {

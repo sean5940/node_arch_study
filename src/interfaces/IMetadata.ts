@@ -4,7 +4,6 @@ export interface IMetadata {
   description: string;
   publisher: string;
   image: string;
-  date: Date;
 }
 
 

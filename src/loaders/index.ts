@@ -11,7 +11,7 @@ export default async ({ expressApp }) => {
   Logger.info('DB loaded and connected!');
 
   const metadataModel = {
-    name: 'metaDataModel',
+    name: 'metadataModel',
     // Notice the require syntax and the '.default'
     model: require('../models/metadata').default,
   };

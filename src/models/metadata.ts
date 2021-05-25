@@ -10,13 +10,21 @@ const Metadata = new mongoose.Schema(
       unique: true,
       index: true,
     },
-
     title: String,
     description: String,
     publisher: String,
-    image: String
+    image: String,
   },
-  { timestamps: true },
+  {
+    toObject: {
+      transform: function (doc, ret) {
+        delete ret._id;
+        delete ret.__v;
+        delete ret.createdAt;
+        delete ret.updatedAt;
+      }
+    }, timestamps: { updatedAt: "date" }
+  },
 );
 
 export default mongoose.model<IMetadata & mongoose.Document>('Metadata', Metadata);
