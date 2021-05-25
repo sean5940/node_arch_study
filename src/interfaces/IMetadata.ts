@@ -1,10 +1,10 @@
 export interface IMetadata {
-  date: Date;
-  description: string;
-  image: string;
-  publisher: string;
-  title: string;
   url: string;
+  title: string;
+  description: string;
+  publisher: string;
+  image: string;
+  date: Date;
 }
 
 
