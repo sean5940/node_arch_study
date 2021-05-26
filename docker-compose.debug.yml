@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - data:/data/db
+  nodearchstudy:
+    image: nodearchstudy
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:3000", "src/app.ts"]
+    links:
+      - mongodb
+volumes:
+  data:
